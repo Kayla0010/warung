@@ -1,20 +1,38 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #fafafa;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #2e8b57;
-    color: white;
+    background-color: #ffbb33;
     padding: 20px;
     text-align: center;
 }
 
-nav a {
-    margin: 0 15px;
+nav ul {
+    list-style: none;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
     color: white;
+    padding: 14px 20px;
+    display: block;
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
 }
 
 section {
@@ -22,28 +40,28 @@ section {
 }
 
 .menu-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
     display: inline-block;
     width: 200px;
+    margin: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 .menu-item img {
     width: 100%;
-    height: auto;
-}
-
-form input, form select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 footer {
-    background-color: #2e8b57;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 20px;
 }
